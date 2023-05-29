@@ -1,16 +1,14 @@
 
 from rest_framework import serializers
 
-from django_app_one.models import Breakdown , Reporting 
+from django_app_one.models import ProductModel  
 
 
-class BreakdownSerializer (serializers.ModelSerializer):
-    class Meta :
-        model = Breakdown
+class ProductSerialzer (serializers.ModelSerializer):
+    class Meta:
+        model=ProductModel
         fields =('__all__')
-class ReportingSerilalizer (serializers.ModelSerializer):
-    class Meta :
-        model = Reporting
-        fields= ('__all__')
+
+
 
 
